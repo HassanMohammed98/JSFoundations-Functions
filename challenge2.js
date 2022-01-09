@@ -8,6 +8,7 @@
  */
 function greet(name) {
   // Your code here
+  console.log(`Hello ${name}`);
 }
 
 /**
@@ -21,6 +22,10 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if(n % 2){
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -34,6 +39,19 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  // let counter=0;
+  // for (let i = 0; i<n; i++){
+  //   if ((n % 2) === 1){
+  //     counter++;
+  //   }
+  // }
+  // return counter;
+  if(n % 2){
+    return (n-1)/2;
+  }
+  else {
+    return n/2;
+  }
 }
 
 /**
@@ -48,6 +66,12 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n%2){
+    return (n**2);
+  }
+  else{
+    return (n*2);
+  }
 }
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
